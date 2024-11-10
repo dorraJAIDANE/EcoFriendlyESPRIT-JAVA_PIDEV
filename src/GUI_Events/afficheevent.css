@@ -1,0 +1,38 @@
+/*
+ * Empty Stylesheet file.
+ */
+/*
+.mainFxmlClass {
+
+}
+ Style du ListView 
+.list-view {
+    -fx-background-color: #f2f2f2;
+}
+
+ Style des cellules du ListView 
+.list-cell {
+   -fx-background-color: transparent;  Fond transparent 
+    -fx-padding: 10;  Ajoute un espacement entre les éléments    
+    -fx-border-color: transparent;
+    -fx-border-width: 0.5;
+    -fx-padding: 10 10 10 10;
+    -fx-background-insets: 0;
+    -fx-text-fill: #333333;
+}
+
+.list-cell:hover {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #c0c0c0;
+}
+
+.list-cell:selected {
+    -fx-background-color: #3399ff;
+    -fx-border-color: #3399ff;
+    -fx-text-fill: white;
+}
+
+ Style des cellules du ListView lorsque désactivé 
+.list-view:disabled .list-cell {
+    -fx-text-fill: #999999;
+}*/

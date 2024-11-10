@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="234.0" stylesheets="@affichagedocuments.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLERS.CLIENT.CardDocController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="card_form_D" prefHeight="263.0" prefWidth="260.0">
+         <children>
+            <VBox layoutX="108.0" layoutY="30.0" prefHeight="255.0" prefWidth="280.0" AnchorPane.bottomAnchor="-25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="124.0" prefWidth="280.0" stylesheets="@../CONTROLLERS/STYLING/customerCardDesign.css">
+                     <children>
+                        <ImageView fx:id="showImage_D" fitHeight="134.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="300.0">
+                     <children>
+                        <Label pickOnBounds="false" prefHeight="22.0" prefWidth="102.0" text="Document :">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="doc_name_d" prefHeight="18.0" prefWidth="86.0" text="Label" textFill="#a42020">
+                           <font>
+                              <Font name="Bookman Old Style" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="159.0" prefHeight="36.0" prefWidth="300.0">
+                     <children>
+                        <Label text="Type:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="type_doc_d" prefHeight="22.0" prefWidth="103.0" text="Label" textFill="#b43535">
+                           <font>
+                              <Font name="Bookman Old Style" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="48.0" prefWidth="280.0">
+                     <children>
+                        <Button fx:id="card_updateinfo_D1" mnemonicParsing="false" onAction="#updateInfoBtnD" prefHeight="31.0" prefWidth="146.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" text="Update Document" textFill="WHITE" visible="false">
+                           <stylesheets>
+                              <URL value="@../CONTROLLERS/STYLING/customerCardDesign.css" />
+                              <URL value="@ajoutdocuments.css" />
+                           </stylesheets>
+                           <styleClass>
+                              <String fx:value="btn" />
+                              <String fx:value="button-add" />
+                           </styleClass></Button>
+                        <Button fx:id="card_moreInfo_D" mnemonicParsing="false" onAction="#moreInfoBtnD" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" stylesheets="@ajoutdocuments.css" text="More Info" textFill="#fcf8f8">
+                           <font>
+                              <Font name="Copperplate Gothic Light" size="12.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="btn" />
+                              <String fx:value="button-add" />
+                           </styleClass></Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+   <styleClass>
+      <String fx:value="white-bg" />
+      <String fx:value="shadow-img" />
+   </styleClass>
+</AnchorPane>

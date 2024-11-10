@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="282.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ProfileController">
+    <stylesheets>
+        <URL value="@profile.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="542.0" prefWidth="30.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #ae2d3c);" />
+      <AnchorPane layoutX="-1.0" prefHeight="30.0" prefWidth="282.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #ae2d3c);" />
+      <AnchorPane layoutX="6.0" layoutY="512.0" prefHeight="30.0" prefWidth="276.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #ae2d3c);" />
+      <AnchorPane layoutX="252.0" prefHeight="542.0" prefWidth="30.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #ae2d3c);" />
+      <FontAwesomeIcon glyphName="USER" layoutX="116.0" layoutY="112.0" size="5em" />
+      <Label layoutX="38.0" layoutY="162.0" text="FIRST NAME :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="196.0" text="LAST NAME :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="226.0" text="EMAIL :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="261.0" text="LOCATION :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="299.0" text="CLASS :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="98.0" layoutY="392.0" mnemonicParsing="false" onAction="#retu" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #ae2d3c);" styleClass="mainFxmlClass" text="back" textFill="#faf4f4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelFistname" layoutX="149.0" layoutY="162.0" prefHeight="18.0" prefWidth="95.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labellastname" layoutX="149.0" layoutY="196.0" prefHeight="18.0" prefWidth="95.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEmail" layoutX="89.0" layoutY="226.0" prefHeight="20.0" prefWidth="162.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelLocation" layoutX="135.0" layoutY="264.0" prefHeight="18.0" prefWidth="115.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelClass" layoutX="119.0" layoutY="299.0" prefHeight="18.0" prefWidth="129.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="cardevent" prefHeight="100.0" prefWidth="1319.0" styleClass="white-bg2" stylesheets="@ajout.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI_Events.Card2Controller">
+   <children>
+      <Label fx:id="evname1" layoutX="157.0" layoutY="40.0" prefHeight="21.0" prefWidth="117.0" text="eventnom">
+         <font>
+            <Font name="Arial Narrow" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="date1" layoutX="280.0" layoutY="39.0" prefHeight="21.0" prefWidth="83.0" text="date">
+         <font>
+            <Font name="Arial Narrow" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="prix1" layoutX="518.0" layoutY="39.0" prefHeight="21.0" prefWidth="30.0" text="prix">
+         <font>
+            <Font name="Arial Narrow" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lieu1" layoutX="363.0" layoutY="40.0" prefHeight="21.0" prefWidth="99.0" text="lieu" />
+      <Label fx:id="nb1" layoutX="615.0" layoutY="39.0" prefHeight="21.0" prefWidth="30.0" text="nb">
+         <font>
+            <Font name="Arial Narrow" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="type1" layoutX="686.0" layoutY="39.0" prefHeight="21.0" prefWidth="99.0" text="type">
+         <font>
+            <Font name="Arial Narrow" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="im1" fitHeight="65.0" fitWidth="139.0" layoutX="10.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="delete1" layoutX="959.0" layoutY="31.0" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="40.0" prefWidth="83.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="butto" stylesheets="@ajout.css" text="Delete" />
+      <Button fx:id="update1" layoutX="1057.0" layoutY="31.0" mnemonicParsing="false" onAction="#updateselected" prefHeight="40.0" prefWidth="83.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="butto" stylesheets="@ajout.css" text="update" />
+      <Label fx:id="description1" layoutX="802.0" layoutY="40.0" prefHeight="21.0" prefWidth="150.0" text="Description">
+         <font>
+            <Font name="Arial Narrow" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="prix11" layoutX="548.0" layoutY="39.0" prefHeight="21.0" prefWidth="16.0" text="dt">
+         <font>
+            <Font name="Arial Narrow" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="nb11" layoutX="637.0" layoutY="39.0" prefHeight="21.0" prefWidth="16.0" text="&lt;" />
+      <Button fx:id="discount1" layoutX="1163.0" layoutY="30.0" mnemonicParsing="false" onAction="#DiscountButtonClick" prefHeight="40.0" prefWidth="99.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="butto" stylesheets="@ajout.css" text="Discount?" />
+      <Label fx:id="dureee" layoutX="473.0" layoutY="41.0" text="Label" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="286.0" stylesheets="@../Style/foruminterface.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ItemMyPostsController">
+   <styleClass>
+      <String fx:value="shadow-img" />
+      <String fx:value="white-bg" />
+   </styleClass>
+   <children>
+      <VBox prefHeight="293.0" prefWidth="286.0">
+         <children>
+            <AnchorPane prefHeight="51.0" prefWidth="257.0">
+               <children>
+                  <Label fx:id="labelprenom" layoutX="21.0" layoutY="18.0" prefHeight="20.0" prefWidth="51.0" text="eya">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelnom" layoutX="72.0" layoutY="18.0" prefHeight="20.0" prefWidth="51.0" text="grati">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="datePost" layoutX="190.0" layoutY="17.0" text="date" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="189.0" prefWidth="307.0">
+               <children>
+                  <Label fx:id="labelpost" layoutX="6.0" layoutY="23.0" prefHeight="56.0" prefWidth="278.0" text="post&#10;" />
+                  <Label fx:id="labletitrepost" layoutX="48.0" layoutY="4.0" text="titre">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgisert" fitHeight="105.0" fitWidth="174.0" layoutX="60.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="58.0" prefWidth="306.0">
+               <children>
+                  <Label fx:id="labelnbrecomment" layoutX="15.0" layoutY="1.0" text="nbres comments" textFill="#f21e1e" />
+                  <Button fx:id="buttonReadComments" layoutX="-2.0" layoutY="16.0" mnemonicParsing="false" onAction="#readComments" prefHeight="17.0" prefWidth="123.0" styleClass="button-read" stylesheets="@../Style/foruminterface.css" text="Read Comments" textFill="#6b6363">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonEdit" alignment="BOTTOM_RIGHT" contentDisplay="CENTER" layoutX="133.0" layoutY="14.0" mnemonicParsing="false" onAction="#Edit" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@../Style/foruminterface.css" text="Edit" textAlignment="CENTER" textFill="#fcfafa">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonDelete" alignment="BOTTOM_RIGHT" layoutX="200.0" layoutY="14.0" mnemonicParsing="false" onAction="#Delete" prefHeight="30.0" prefWidth="77.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@../Style/foruminterface.css" text="Delete" textFill="#fcfafa">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" layoutX="213.0" layoutY="33.0" size="1.2em" />
+                  <FontAwesomeIcon fill="WHITE" glyphName="EDIT" layoutX="143.0" layoutY="33.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

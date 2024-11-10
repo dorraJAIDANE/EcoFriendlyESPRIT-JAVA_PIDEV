@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLERS.ADMIN.Supprimerdocuments_adminController">
+    <stylesheets>
+        <URL value="@supprimerdocuments_admin.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="sanchorpane2_d" layoutX="20.0" layoutY="20.0" prefHeight="600.0" prefWidth="730.0" stylesheets="@../../biblio/src/STYLING/LIBRARYSTYLING.css">
+         <children>
+            <AnchorPane fx:id="sanchorpane3_d" layoutX="3.0" layoutY="6.0" prefHeight="594.0" prefWidth="860.0" stylesheets="@../../biblio/src/CONTROLLERS/STYLING/listeservice.css">
+               <styleClass>
+                  <String fx:value="white-form" />
+                  <String fx:value="radius" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <AnchorPane fx:id="sanchorpane4_d" layoutX="129.0" layoutY="83.0" prefHeight="55.0" prefWidth="510.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="top-card" stylesheets="@../../biblio/src/CONTROLLERS/STYLING/listeservice.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="LIBRARY" textAlignment="RIGHT" textFill="#f2eded" textOverrun="CENTER_WORD_ELLIPSIS">
+                           <font>
+                              <Font name="Castellar" size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Separator layoutX="-20.0" layoutY="338.0" prefHeight="4.0" prefWidth="877.0" />
+                  <AnchorPane layoutX="7.0" layoutY="62.0" prefHeight="269.0" prefWidth="846.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);">
+                     <children>
+                        <TableView fx:id="treeview_d" layoutY="6.0" prefHeight="226.0" prefWidth="746.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" stylesheets="@affichagedocuments.css">
+                          <columns>
+                            <TableColumn fx:id="name_doc_d" prefWidth="112.80001831054688" text="Name Document" />
+                            <TableColumn fx:id="semester_d" prefWidth="67.20001220703125" text="semester" />
+                              <TableColumn fx:id="level_d" prefWidth="67.20001220703125" text="level" />
+                              <TableColumn fx:id="topic_d" prefWidth="90.4000244140625" text="Topic" />
+                              <TableColumn fx:id="type_d" prefWidth="124.79998779296875" text="Type" />
+                              <TableColumn fx:id="image_d" prefWidth="153.60000610351562" text="image" />
+                              <TableColumn fx:id="valide_d" prefWidth="124.79998779296875" text="valide" />
+                          </columns>
+                        </TableView>
+                        <Button alignment="BOTTOM_RIGHT" layoutX="753.0" layoutY="214.0" mnemonicParsing="false" onAction="#delete_d" prefHeight="47.0" prefWidth="90.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@ajoutdocuments.css" text="Valide" textFill="#f2f2f2">
+                           <font>
+                              <Font name="Mistral" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="806.0" layoutY="1.0" mnemonicParsing="false" onAction="#refrech_d" prefHeight="17.0" prefWidth="30.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@ajoutdocuments.css" textFill="WHITE" />
+                        <FontAwesomeIcon fill="#fff7f7" glyphName="REFRESH" layoutX="815.0" layoutY="19.0" />
+                        <FontAwesomeIcon fill="WHITE" glyphName="CHECK" layoutX="760.0" layoutY="243.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="7.0" layoutY="351.0" prefHeight="235.0" prefWidth="846.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);">
+                     <children>
+                        <ListView fx:id="listeview" layoutX="92.0" layoutY="7.0" prefHeight="226.0" prefWidth="230.0" />
+                        <Button layoutX="557.0" layoutY="46.0" mnemonicParsing="false" onAction="#ajoutettopic_d" prefHeight="47.0" prefWidth="110.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@ajoutdocuments.css" text="ADD" textFill="#f2f2f2">
+                           <font>
+                              <Font name="Mistral" size="25.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="dorratopic" layoutX="341.0" layoutY="93.0" prefHeight="26.0" prefWidth="184.0" promptText="Name Topic" />
+                        <Button layoutX="557.0" layoutY="126.0" mnemonicParsing="false" onAction="#deletetopic_d" prefHeight="47.0" prefWidth="110.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@ajoutdocuments.css" text="Delete" textFill="#f2f2f2">
+                           <font>
+                              <Font name="Mistral" size="25.0" />
+                           </font>
+                        </Button>
+                        <FontAwesomeIcon fill="#fff6f6" glyphName="PLUS" layoutX="569.0" layoutY="75.0" />
+                        <FontAwesomeIcon fill="#fffdfd" glyphName="CLOSE" layoutX="568.0" layoutY="155.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,264 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+.myForm {
+    -fx-background-color: #F4F4F4; /* Couleur de fond du formulaire */
+    -fx-padding: 20px;
+        -fx-background-radius:10px;/* Coins arrondis */
+
+}
+
+/* Styles for form labels */
+
+
+/* Styles for text input fields */
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Épaisseur de la bordure */
+    -fx-border-radius: 5px; /* Coins arrondis de la bordure */
+    -fx-text-fill: #000000; /* Couleur du texte de l'indicateur de champ */
+    -fx-font-size: 16px; /* Taille de police */
+     -fx-font-weight: bold; /* Texte en gras */
+}
+
+.text-field:focused {
+    -fx-border-color: #007bff; /* Couleur de la bordure lorsqu'il est sélectionné */
+}
+
+/* Styles for buttons */
+/*.button {
+    -fx-background-color: #0078D7;  Couleur de fond des boutons (bleu) 
+    -fx-text-fill: white;  Couleur du texte des boutons (blanc) 
+    -fx-font-size: 14px;  Taille de police des boutons 
+    -fx-pref-height: 40px;  Hauteur préférée des boutons 
+    -fx-font-weight: bold;  Police en gras 
+}
+
+ Style for hover effect on buttons 
+.button:hover {
+    -fx-background-color: #005BBF;  Couleur de fond au survol (bleu plus foncé) 
+}*/
+
+
+
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #FF69B4, #FF1493);
+    -fx-background-radius: 5;
+    -fx-background-insets: 0, 1, 1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #FF1493, #FF69B4);
+}
+
+.button:pressed {
+    -fx-background-color: #FF69B4;
+}
+
+
+
+.butto {
+    -fx-background-color: linear-gradient(to top right, #1e242e, #ae2d3c);
+    -fx-background-radius: 20; /* Augmentez la valeur du rayon */
+    -fx-background-insets: 0, 1, 1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 ;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0);
+}
+
+.butto:hover {
+    -fx-background-color: linear-gradient(to top right, #ae2d3c, #1e242e);
+}
+
+.butto:pressed {
+    -fx-background-color: #1e242e;
+}
+
+
+
+.labe {
+    -fx-background-color: linear-gradient(to top right, #1e242e, #ae2d3c);
+    -fx-background-radius: 5;
+    -fx-background-insets: 0, 1, 1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+}
+
+
+.card {
+    -fx-background-color: linear-gradient(to right, #FF69B4, #FF1493); /* Dégradé de rose */
+    -fx-background-radius: 10px;
+}
+.shadow{
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.5),6,0,0,0);
+}
+
+.text-area {
+    
+   
+    -fx-border-color: white; /* Définir la couleur de la bordure en blanc */
+}
+.date-picker {
+    -fx-font-size: 14px; /* Taille de police */
+    -fx-background-color: transparent;
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Épaisseur de la bordure */
+    -fx-border-radius: 5px; /* Coins arrondis de la bordure */
+}
+
+.date-picker:focused {
+    -fx-border-color: #007bff; /* Couleur de la bordure lorsqu'il est sélectionné */
+}
+
+
+
+/*.card1{
+  -fx-background-color: linear-gradient(to right,#2b303c,#525968 );  
+  -fx-background-radius:5px;
+}*/
+.grid-pane {
+    -fx-hgap: 20px; /* Espacement horizontal entre les éléments */
+    -fx-vgap: 20px; /* Espacement vertical entre les éléments */
+    -fx-padding: 40px; /* Marge externe du GridPane */
+}
+/*.card2 {
+    -fx-background-color: rgba(43, 48, 60, 0.5), linear-gradient(to right, #2b303c, #525968);
+    -fx-background-radius: 5px;
+}*/
+
+
+.card1 {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: #2b303c;
+}
+
+
+
+
+
+/* Styles pour un ScrollPane mince et transparent */
+.scroll-pane1 {
+    -fx-background-color: transparent; /* Définir la couleur de fond du ScrollPane comme transparent */
+    -fx-padding: 1; /* Ajuster la marge intérieure pour rendre le ScrollPane plus mince */
+    -fx-hbar-policy: never; /* Désactiver la barre de défilement horizontale si vous n'en avez pas besoin */
+    -fx-vbar-policy: as-needed; /* Définir la barre de défilement verticale pour apparaître uniquement au besoin */
+}
+
+
+
+
+.list-cell {
+    -fx-background-color: #f9f9f9;
+    -fx-padding: 10 15 10 15;
+    -fx-border-width: 1;
+    -fx-border-color: #e0e0e0;
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 1);
+    -fx-alignment: center-left;
+    -fx-background-insets: 0;
+}
+.list-cell:hover {
+    -fx-background-color: #e0e0e0;
+    -fx-background-insets: 0;
+}
+
+.listView {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 10;
+}
+
+
+
+
+
+
+
+
+
+
+.card4{
+  -fx-background-color: linear-gradient(to right,#2b303c,#525968 );  
+  -fx-background-radius:5px;
+}
+
+/* Style pour la bordure du ScrollPane */
+
+
+.shadow2{
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.5),6,0,0,0);
+}
+.white-bg2{
+    -fx-background-color:#fff;
+    -fx-background-radius:8px;
+}
+
+.card3{
+  -fx-background-color: linear-gradient(to right,#2b303c,#525968 );  
+  -fx-background-radius:5px;
+}
+
+
+
+
+/* Classe CSS pour les labels avec la couleur de texte rose */
+.labelWithRoseText {
+    -fx-text-fill: #FF1493; /* Rose */
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.white-bg2:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 8,0,0,0);
+}
+
+.payment-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 20px
+
+}
+    
+.table-view{
+   -fx-background-color:transparent;
+   -fx-border-color: linear-gradient(to bottom right,#272b3f,#256b51 );
+   -fx-border-radius:8px ;
+   -fx-padding:0px;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right,#272b3f,#256b51 );
+    -fx-background-insets: 0 0 0 0;
+    -f-background-radius:8px 8px 0px 0px; 
+}
+.table-view .table-column{
+    -fx-alignment:center;
+} 
+
+.table-view .column-header, .filter{
+    -fx-background-color:transparent;
+    -fx-size:40px;
+}
+.table-view .column-header .label{
+-fx-text-fill: #fff;
+-fx-font-size: 14px;
+}
+/* Style des champs de saisie */
+
+
+/* Style du bouton de paiement */

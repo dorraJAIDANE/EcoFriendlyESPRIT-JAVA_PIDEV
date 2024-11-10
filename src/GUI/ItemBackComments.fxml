@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="90.0" prefWidth="806.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="GUI.ItemBackCommentsController">
+   <children>
+      <Label fx:id="inputPrenom" layoutX="48.0" layoutY="37.0" text="First Name" />
+      <Label fx:id="inputNom" layoutX="144.0" layoutY="37.0" text="Last Name" />
+      <Label fx:id="inputCommentaire" layoutX="288.0" layoutY="14.0" prefHeight="67.0" prefWidth="381.0" text="Commentaire&#10;commentaire&#10;commentaire" />
+      <Label fx:id="inputDate" layoutX="685.0" layoutY="29.0" prefHeight="17.0" prefWidth="110.0" text="Date" />
+   </children>
+</AnchorPane>

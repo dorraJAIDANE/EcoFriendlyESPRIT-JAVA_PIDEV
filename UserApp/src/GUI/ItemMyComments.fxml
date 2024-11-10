@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="99.0" prefWidth="680.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="GUI.ItemMyCommentsController">
+   <children>
+      <Label fx:id="labelNom" layoutX="137.0" layoutY="14.0" text="labelnom" />
+      <Label fx:id="labelprenom" layoutX="61.0" layoutY="14.0" text="Labelprenom" />
+      <Label fx:id="labeldescription" layoutX="29.0" layoutY="45.0" prefHeight="30.0" prefWidth="501.0" text="Description" />
+      <Label fx:id="labeldate" layoutX="532.0" layoutY="14.0" prefHeight="17.0" prefWidth="100.0" text="date" />
+      <Button fx:id="buttonEdit" alignment="BOTTOM_RIGHT" contentDisplay="CENTER" layoutX="530.0" layoutY="45.0" mnemonicParsing="false" onAction="#Edit" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@../Style/foruminterface.css" text="Edit" textAlignment="CENTER" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonDelete" alignment="BOTTOM_RIGHT" layoutX="595.0" layoutY="44.0" mnemonicParsing="false" onAction="#Delete" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@../Style/foruminterface.css" text="Delete" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <FontAwesomeIcon fill="WHITE" glyphName="EDIT" layoutX="543.0" layoutY="64.0" />
+      <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" layoutX="607.0" layoutY="63.0" size="1.1em" />
+   </children>
+</AnchorPane>

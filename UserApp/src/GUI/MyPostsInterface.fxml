@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: F1F1F1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MyPostsInterfaceController">
+   <children>
+      <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0">
+         <children>
+            <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <BorderPane layoutX="139.0" layoutY="121.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <left>
+                        <AnchorPane prefHeight="600.0" prefWidth="222.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane layoutY="-6.0" prefHeight="600.0" prefWidth="222.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" stylesheets="@../../../Forum/src/Style/foruminterface.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="11.0" layoutY="51.0" prefHeight="70.0" prefWidth="222.0" style="-fx-background-color: FFFFFF;" styleClass="header" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <ImageView fitHeight="81.0" fitWidth="104.0" layoutX="54.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Style/logo1.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                       <stylesheets>
+                                          <URL value="@../../../../../Downloads/EcoFriendly-ESPRIT-mainform/EcoFriendly-ESPRIT-mainform/src/STYLING/listeservice.css" />
+                                          <URL value="@../../../../../Downloads/EcoFriendly-ESPRIT-mainform/EcoFriendly-ESPRIT-mainform/src/STYLING/listeservice.css" />
+                                       </stylesheets>
+                                    </AnchorPane>
+                                    <Label layoutX="11.0" layoutY="162.0" text="Welcome, " textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="username" layoutX="82.0" layoutY="162.0" prefHeight="21.0" prefWidth="129.0" text="username !" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="dashboard_btn" cache="true" layoutX="13.0" layoutY="249.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../Style/foruminterface.css" text="Dashboard" />
+                                    <Button fx:id="transport_btn" cache="true" layoutX="12.0" layoutY="349.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../Style/foruminterface.css" text="Transport" />
+                                    <Button fx:id="biblio_btn" cache="true" layoutX="13.0" layoutY="399.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../Style/foruminterface.css" text="Biblio" />
+                                    <Button fx:id="event_btn" cache="true" layoutX="13.0" layoutY="448.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../Style/foruminterface.css" text="Event" />
+                                    <Label layoutX="62.0" layoutY="560.0" text="Logout" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="62.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="services_btn" cache="true" layoutX="13.0" layoutY="499.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../Style/foruminterface.css" text="Services" />
+                                    <Button fx:id="forum_btn" cache="true" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../Style/foruminterface.css" text="Forum" />
+                                    <FontAwesomeIcon fill="#f5f2f2" glyphName="DASHBOARD" layoutX="37.0" layoutY="278.0" size="2em" wrappingWidth="17.5999755859375" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="COMMENTS" layoutX="43.0" layoutY="330.0" size="2em" text="" />
+                                    <FontAwesomeIcon fill="#f8f8f8" glyphName="BUS" layoutX="44.0" layoutY="377.0" size="2em" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="BOOK" layoutX="43.0" layoutY="429.0" size="2em" text="" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR" layoutX="43.0" layoutY="478.0" size="2em" text="" />
+                                    <FontAwesomeIcon fill="#eeeeee" glyphName="SLIDERS" layoutX="44.0" layoutY="527.0" size="2em" />
+                                    <ImageView fitHeight="57.0" fitWidth="77.0" layoutX="70.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../Downloads/EcoFriendly-ESPRIT-mainform/EcoFriendly-ESPRIT-mainform/src/STYLING/user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="dasborbprofile" cache="true" layoutX="12.0" layoutY="193.0" mnemonicParsing="false" onAction="#profile" prefHeight="46.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../Style/foruminterface.css" text="Pofile " />
+                                    <FontAwesomeIcon fill="#1cacee" glyphName="SIGN_OUT" layoutX="26.0" layoutY="580.0" size="2em" />
+                                    <Button fx:id="logout_btn" layoutX="16.0" layoutY="555.0" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="103.0" styleClass="nav-btn" stylesheets="@../Style/foruminterface.css" />
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="nav" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </left>
+                     <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label layoutX="88.0" layoutY="39.0" text="My Posts" textFill="#ff3030">
+                                 <font>
+                                    <Font name="System Bold Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <ScrollPane layoutX="2.0" layoutY="108.0" prefHeight="492.0" prefWidth="875.0">
+                                 <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2013.0" prefWidth="857.0">
+                                       <children>
+                                          <GridPane fx:id="GridpaneMyPosts" layoutX="8.0" layoutY="7.0" prefHeight="0.0" prefWidth="31.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                          </GridPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                              <Button fx:id="buttonReturn" layoutX="631.0" layoutY="36.0" mnemonicParsing="false" onAction="#Return" prefHeight="38.0" prefWidth="122.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@../Style/foruminterface.css" text="Return" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="ROTATE_LEFT" layoutX="646.0" layoutY="59.0" size="1.2em" />
+                              <Button fx:id="close" layoutX="821.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+                              <FontAwesomeIcon glyphName="CLOSE" layoutX="844.0" layoutY="18.0" />
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

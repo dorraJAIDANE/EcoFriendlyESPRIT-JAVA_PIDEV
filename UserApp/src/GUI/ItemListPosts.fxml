@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="78.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ItemListPostsController">
+   <children>
+      <Label fx:id="labelPrenomUser" layoutX="14.0" layoutY="29.0" text="PrenomUser" />
+      <Label fx:id="labelnomUser" layoutX="94.0" layoutY="29.0" prefHeight="17.0" prefWidth="66.0" text="NomUser" />
+      <Label fx:id="labeSubject" layoutX="153.0" layoutY="29.0" prefHeight="17.0" prefWidth="98.0" text="Subject" />
+      <Label fx:id="labeltitle" layoutX="254.0" layoutY="29.0" prefHeight="17.0" prefWidth="66.0" text="Title" />
+      <Label fx:id="labelpost" layoutX="329.0" layoutY="15.0" prefHeight="45.0" prefWidth="206.0" text="Post" />
+      <Label fx:id="labeldate" layoutX="612.0" layoutY="29.0" prefHeight="17.0" prefWidth="66.0" text="date" />
+      <AnchorPane layoutX="526.0" layoutY="1.0" prefHeight="67.0" prefWidth="80.0">
+         <children>
+            <ImageView fx:id="imgimg" fitHeight="75.0" fitWidth="80.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="buttonComments" layoutX="688.0" layoutY="20.0" mnemonicParsing="false" onAction="#ShowComments" prefHeight="35.0" prefWidth="91.0" styleClass="button-add" stylesheets="@../Style/foruminterface.css" text="Comments">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

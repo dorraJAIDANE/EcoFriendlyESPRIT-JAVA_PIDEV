@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="92.0" prefWidth="774.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="GUI.ItemlistusersController">
+    <stylesheets>
+        <URL value="@itemlistusers.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="prenomuser" layoutX="50.0" layoutY="37.0" prefHeight="22.0" prefWidth="102.0" text="PrenomUser">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="nomuser" layoutX="163.0" layoutY="37.0" prefHeight="22.0" prefWidth="102.0" text="NomUser">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailuser" layoutX="267.0" layoutY="37.0" prefHeight="22.0" prefWidth="213.0" text="EmailUser">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="classeuser" layoutX="505.0" layoutY="37.0" text="ClasseUser">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="adresseuser" layoutX="633.0" layoutY="37.0" prefHeight="22.0" prefWidth="113.0" text="AdresseUser">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

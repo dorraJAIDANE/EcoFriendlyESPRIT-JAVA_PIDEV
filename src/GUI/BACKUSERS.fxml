@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: F1F1F1;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.BACKUSERSController">
+   <children>
+      <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0">
+         <children>
+            <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <BorderPane layoutX="139.0" layoutY="121.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <left>
+                        <AnchorPane prefHeight="600.0" prefWidth="222.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane layoutY="-6.0" prefHeight="600.0" prefWidth="222.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" stylesheets="@../../../../../Desktop/EcoFriendly-ESPRIT-mainform/src/STYLING/listeservice.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="11.0" layoutY="51.0" prefHeight="70.0" prefWidth="222.0" style="-fx-background-color: FFFFFF;" styleClass="header" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <stylesheets>
+                                          <URL value="@../../../../../Desktop/EcoFriendly-ESPRIT-mainform/src/STYLING/listeservice.css" />
+                                          <URL value="@../../../../../Desktop/EcoFriendly-ESPRIT-mainform/src/STYLING/listeservice.css" />
+                                       </stylesheets>
+                                       <children>
+                                          <ImageView fitHeight="101.0" fitWidth="208.0" layoutX="50.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Style/logo.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                    <Label layoutX="11.0" layoutY="115.0" text="Welcome, " textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="username" layoutX="84.0" layoutY="115.0" prefHeight="21.0" prefWidth="129.0" text="Admin !" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="dashboard_btn" cache="true" layoutX="12.0" layoutY="231.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../STYLING/listeservice.css" text="List Users" />
+                                    <Button fx:id="transport_btn" cache="true" layoutX="12.0" layoutY="330.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../STYLING/listeservice.css" text="Transport" />
+                                    <Button fx:id="biblio_btn" cache="true" layoutX="12.0" layoutY="384.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../STYLING/listeservice.css" text="Biblio" />
+                                    <Button fx:id="event_btn" cache="true" layoutX="12.0" layoutY="433.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../STYLING/listeservice.css" text="Event" />
+                                    <Button fx:id="logout_btn2" layoutX="14.0" layoutY="554.0" mnemonicParsing="false" onAction="#logout" styleClass="logout" stylesheets="@../STYLING/listeservice.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0">
+                                       <graphic>
+                                          <FontAwesomeIcon fx:id="buttonlogou" fill="#1cacee" glyphName="SIGN_OUT" size="2em" text="" wrappingWidth="123.59997749328613" />
+                                       </graphic>
+                                    </Button>
+                                    <Label layoutX="71.0" layoutY="560.0" text="Logout" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="71.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="services_btn" cache="true" layoutX="11.0" layoutY="484.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../STYLING/listeservice.css" text="Services" />
+                                    <Button fx:id="forum_btn" cache="true" layoutX="12.0" layoutY="280.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../STYLING/listeservice.css" text="Forum" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="37.0" layoutY="259.0" size="2em" wrappingWidth="17.5999755859375" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="COMMENTS" layoutX="40.0" layoutY="304.0" size="2em" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="BUS" layoutX="46.0" layoutY="354.0" size="2em" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="BOOK" layoutX="49.0" layoutY="408.0" size="2em" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR" layoutX="49.0" layoutY="457.0" size="2em" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="SLIDERS" layoutX="50.0" layoutY="508.0" size="2em" />
+                                    <Button fx:id="codepromo" cache="true" layoutX="15.0" layoutY="183.0" mnemonicParsing="false" onAction="#promo" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@../STYLING/listeservice.css" text="code promo" />
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="nav" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </left>
+                     <center>
+                        <AnchorPane fx:id="hayhtem" prefHeight="594.0" prefWidth="867.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane id="AnchorPane" fx:id="ADMINSERVICE1" prefHeight="400.0" prefWidth="600.0" visible="false">
+                                 <children>
+                                    <AnchorPane fx:id="service_form" prefHeight="600.0" prefWidth="878.0">
+                                       <children>
+                                          <AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="230.0" prefWidth="854.0" stylesheets="@../STYLING/listeservice.css" AnchorPane.bottomAnchor="356.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="14.0">
+                                             <styleClass>
+                                                <String fx:value="white-form" />
+                                                <String fx:value="shadow" />
+                                                <String fx:value="radius" />
+                                             </styleClass>
+                                             <children>
+                                                <AnchorPane layoutX="327.0" prefHeight="43.0" prefWidth="854.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="top-card" stylesheets="@../STYLING/listeservice.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Label layoutX="14.0" layoutY="11.0" text="Table for Service List" textFill="WHITE" underline="true">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <TableView fx:id="service_tableView" layoutX="13.0" layoutY="64.0" onMouseClicked="#servicesSelectData" prefHeight="246.0" prefWidth="828.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="64.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="service_col_service" prefWidth="155.0" text="serviceName" />
+                                                      <TableColumn fx:id="service_col_PPK" prefWidth="144.0" text="Price " />
+                                                      <TableColumn fx:id="service_col_DU" prefWidth="151.0" text="img" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="12.0" layoutY="316.0" prefHeight="329.0" prefWidth="854.0" stylesheets="@../STYLING/listeservice.css" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
+                                             <styleClass>
+                                                <String fx:value="white-form" />
+                                                <String fx:value="shadow" />
+                                                <String fx:value="radius" />
+                                             </styleClass>
+                                             <children>
+                                                <AnchorPane layoutY="-2.0" prefHeight="38.0" prefWidth="854.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="top-card" stylesheets="@../STYLING/listeservice.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Label layoutX="14.0" layoutY="11.0" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label layoutX="477.0" layoutY="7.0" prefHeight="22.0" prefWidth="148.0" text="Statics Panal" textFill="WHITE" underline="true">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label layoutX="88.0" layoutY="11.0" text="Control Pane " textFill="WHITE" underline="true">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <ComboBox fx:id="service_type" layoutX="101.0" layoutY="53.0" prefWidth="150.0" promptText="Choose..." />
+                                                <Label layoutX="7.0" layoutY="56.0" text="service name:">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="7.0" layoutY="101.0" text="Price Per Kilo:">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="service_PPK" layoutX="102.0" layoutY="99.0" prefHeight="25.0" prefWidth="148.0" promptText="\$0.0" />
+                                                <AnchorPane layoutX="22.0" layoutY="148.0" prefHeight="115.0" prefWidth="103.0" stylesheets="@../STYLING/listeservice.css" AnchorPane.rightAnchor="729.1999999999999" AnchorPane.topAnchor="148.0">
+                                                   <styleClass>
+                                                      <String fx:value="white-form" />
+                                                      <String fx:value="shadow" />
+                                                   </styleClass>
+                                                   <children>
+                                                      <ImageView fx:id="service_imageView" fitHeight="115.0" fitWidth="103.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <Button fx:id="service_importBtn" layoutX="25.99999999999997" layoutY="269.0" mnemonicParsing="false" onAction="#servicesImportBtn" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="btn" stylesheets="@../STYLING/listeservice.css" text="Import" AnchorPane.rightAnchor="734.0" AnchorPane.topAnchor="269.0" />
+                                                <Button fx:id="service_insertBtn" layoutX="141.0" layoutY="189.0" mnemonicParsing="false" onAction="#servicesInsertBtn" prefHeight="37.0" prefWidth="103.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="btn" stylesheets="@../STYLING/listeservice.css" text="Insert" />
+                                                <Button fx:id="service_updateBtn" layoutX="140.0" layoutY="138.0" mnemonicParsing="false" onAction="#servicesUpdateBtn" prefHeight="37.0" prefWidth="103.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="btn" stylesheets="@../STYLING/listeservice.css" text="Update" />
+                                                <Button fx:id="service_clearBtn" layoutX="141.0" layoutY="286.0" mnemonicParsing="false" onAction="#servicesClearBtn" prefHeight="37.0" prefWidth="103.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="btn" stylesheets="@../STYLING/listeservice.css" text="Clear" />
+                                                <Button fx:id="service_deleteBtn" layoutX="142.0" layoutY="237.0" mnemonicParsing="false" onAction="#servicesDeleteBtn" prefHeight="37.0" prefWidth="103.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="btn" stylesheets="@../STYLING/listeservice.css" text="Delete" />
+                                                <Separator layoutX="520.0" layoutY="42.0" orientation="VERTICAL" prefHeight="285.0" prefWidth="18.0" />
+                                                <Separator layoutX="250.0" layoutY="42.0" orientation="VERTICAL" prefHeight="294.0" prefWidth="11.0" />
+                                                <AnchorPane layoutX="535.0" layoutY="46.0" prefHeight="274.0" prefWidth="301.0" stylesheets="@../STYLING/listeservice.css">
+                                                   <styleClass>
+                                                      <String fx:value="white-form" />
+                                                      <String fx:value="radius" />
+                                                      <String fx:value="shadow" />
+                                                   </styleClass>
+                                                   <children>
+                                                      <BarChart fx:id="dashbaord_IPD_chart" layoutX="-94.0" layoutY="-38.0" prefHeight="362.0" prefWidth="406.0" title="Income Per Day" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <xAxis>
+                                                            <CategoryAxis side="BOTTOM" />
+                                                         </xAxis>
+                                                         <yAxis>
+                                                            <NumberAxis side="LEFT" />
+                                                         </yAxis>
+                                                      </BarChart>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="259.0" layoutY="44.0" prefHeight="274.0" prefWidth="263.0" stylesheets="@../STYLING/listeservice.css">
+                                                   <styleClass>
+                                                      <String fx:value="white-form" />
+                                                      <String fx:value="radius" />
+                                                      <String fx:value="shadow" />
+                                                   </styleClass>
+                                                   <children>
+                                                      <LineChart fx:id="dashbaord_NOO_chart" layoutX="-8.0" layoutY="-118.0" prefHeight="274.0" prefWidth="271.0" title="Number of Orders" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <xAxis>
+                                                            <CategoryAxis side="BOTTOM" />
+                                                         </xAxis>
+                                                         <yAxis>
+                                                            <NumberAxis side="LEFT" />
+                                                         </yAxis>
+                                                      </LineChart>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </AnchorPane>
+                                          <Separator layoutX="14.0" layoutY="250.6" prefHeight="6.0" prefWidth="851.0" AnchorPane.bottomAnchor="343.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="13.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane id="AnchorPane" fx:id="bibliodorra" layoutX="-16.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" visible="false">
+                                 <stylesheets>
+                                    <URL value="@supprimerdocuments_admin.css" />
+                                 </stylesheets>
+                                 <children>
+                                    <AnchorPane fx:id="sanchorpane2_d" layoutX="20.0" layoutY="20.0" prefHeight="600.0" prefWidth="730.0" stylesheets="@../../biblio/src/STYLING/LIBRARYSTYLING.css">
+                                       <children>
+                                          <AnchorPane fx:id="sanchorpane3_d" layoutX="3.0" layoutY="6.0" prefHeight="594.0" prefWidth="860.0" stylesheets="@../../biblio/src/CONTROLLERS/STYLING/listeservice.css">
+                                             <styleClass>
+                                                <String fx:value="white-form" />
+                                                <String fx:value="radius" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                             <children>
+                                                <AnchorPane fx:id="sanchorpane4_d" layoutX="129.0" layoutY="83.0" prefHeight="55.0" prefWidth="510.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="top-card" stylesheets="@../../biblio/src/CONTROLLERS/STYLING/listeservice.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Label layoutX="14.0" layoutY="14.0" text="LIBRARY" textAlignment="RIGHT" textFill="#f2eded" textOverrun="CENTER_WORD_ELLIPSIS">
+                                                         <font>
+                                                            <Font name="Castellar" size="27.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <Separator layoutX="-20.0" layoutY="338.0" prefHeight="4.0" prefWidth="877.0" />
+                                                <AnchorPane layoutX="7.0" layoutY="62.0" prefHeight="269.0" prefWidth="846.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);">
+                                                   <children>
+                                                      <TableView fx:id="treeview_d" layoutY="6.0" prefHeight="226.0" prefWidth="746.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" stylesheets="@affichagedocuments.css">
+                                                         <columns>
+                                                            <TableColumn fx:id="name_doc_d" prefWidth="112.80001831054688" text="Name Document" />
+                                                            <TableColumn fx:id="semester_d" prefWidth="67.20001220703125" text="semester" />
+                                                            <TableColumn fx:id="level_d" prefWidth="67.20001220703125" text="level" />
+                                                            <TableColumn fx:id="topic_d" prefWidth="90.4000244140625" text="Topic" />
+                                                            <TableColumn fx:id="type_d" prefWidth="124.79998779296875" text="Type" />
+                                                            <TableColumn fx:id="image_d" prefWidth="153.60000610351562" text="image" />
+                                                            <TableColumn fx:id="valide_d" prefWidth="124.79998779296875" text="valide" />
+                                                         </columns>
+                                                      </TableView>
+                                                      <Button alignment="BOTTOM_RIGHT" layoutX="753.0" layoutY="214.0" mnemonicParsing="false" onAction="#delete_d" prefHeight="47.0" prefWidth="90.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@ajoutdocuments.css" text="Valide" textFill="#f2f2f2">
+                                                         <font>
+                                                            <Font name="Mistral" size="25.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Button layoutX="806.0" layoutY="1.0" mnemonicParsing="false" onAction="#refrech_d" prefHeight="17.0" prefWidth="30.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@ajoutdocuments.css" textFill="WHITE" />
+                                                      <FontAwesomeIcon fill="#fff7f7" glyphName="REFRESH" layoutX="815.0" layoutY="19.0" />
+                                                      <FontAwesomeIcon fill="WHITE" glyphName="CHECK" layoutX="760.0" layoutY="243.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="7.0" layoutY="351.0" prefHeight="235.0" prefWidth="846.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);">
+                                                   <children>
+                                                      <ListView fx:id="listeview" layoutX="92.0" layoutY="7.0" prefHeight="226.0" prefWidth="230.0" />
+                                                      <Button layoutX="557.0" layoutY="46.0" mnemonicParsing="false" onAction="#ajoutettopic_d" prefHeight="47.0" prefWidth="110.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@ajoutdocuments.css" text="ADD" textFill="#f2f2f2">
+                                                         <font>
+                                                            <Font name="Mistral" size="25.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <TextField fx:id="dorratopic" layoutX="341.0" layoutY="93.0" prefHeight="26.0" prefWidth="184.0" promptText="Name Topic" />
+                                                      <Button layoutX="557.0" layoutY="126.0" mnemonicParsing="false" onAction="#deletetopic_d" prefHeight="47.0" prefWidth="110.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000)linear-gradient(to top right, #1e242e, #FF0000);" styleClass="button-add" stylesheets="@ajoutdocuments.css" text="Delete" textFill="#f2f2f2">
+                                                         <font>
+                                                            <Font name="Mistral" size="25.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <FontAwesomeIcon fill="#fff6f6" glyphName="PLUS" layoutX="569.0" layoutY="75.0" />
+                                                      <FontAwesomeIcon fill="#fffdfd" glyphName="CLOSE" layoutX="568.0" layoutY="155.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane id="AnchorPane" fx:id="posteeya" layoutX="11.0" layoutY="34.0" prefHeight="546.0" prefWidth="873.0" visible="false">
+                                 <children>
+                                    <AnchorPane prefHeight="546.0" prefWidth="806.0" stylesheets="@../GUI_Events/ajout.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <TableView fx:id="admintab" layoutX="13.0" layoutY="127.0" prefHeight="240.0" prefWidth="781.0">
+                                             <columns>
+                                                <TableColumn fx:id="nomev" prefWidth="108.0" text="Event" />
+                                                <TableColumn fx:id="typeev" prefWidth="114.0" text="Durée" />
+                                                <TableColumn fx:id="dureadm" prefWidth="114.0" text="Prix" />
+                                                <TableColumn fx:id="Lieuadm" prefWidth="114.0" text="Lieu" />
+                                                <TableColumn fx:id="Prixadm" prefWidth="114.0" text="NbMax" />
+                                                <TableColumn fx:id="nbadm" prefWidth="114.0" text="Type" />
+                                                <TableColumn fx:id="validadm" prefWidth="114.0" text="Status" />
+                                             </columns>
+                                          </TableView>
+                                          <Button fx:id="banadm" layoutX="360.0" layoutY="451.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="173.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="butto" stylesheets="@../GUI_Events/ajout.css" text="Ban" />
+                                          <Label layoutX="126.0" layoutY="39.0" text="Welcome Admin" textFill="#c95959">
+                                             <font>
+                                                <Font name="Arial Narrow Bold" size="38.0" />
+                                             </font>
+                                          </Label>
+                                          <FontAwesomeIcon fill="#ae4814" glyphName="USER" layoutX="47.0" layoutY="78.0" size="5em" />
+                                          <AnchorPane fx:id="dashboard_form" layoutX="-6.0" layoutY="-26.0" prefHeight="600.0" prefWidth="878.0" style="-fx-background-color: DDDDDD;">
+                                             <children>
+                                                <Label fx:id="labelStatus" layoutX="172.0" layoutY="500.0" prefHeight="3.0" prefWidth="278.0" />
+                                                <ListView fx:id="listViewlistPost" layoutX="34.0" layoutY="108.0" prefHeight="356.0" prefWidth="806.0" />
+                                                <Label layoutX="369.0" layoutY="27.0" text="List Posts" textFill="#ee0a0a">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="41.0" layoutY="85.0" prefHeight="17.0" prefWidth="70.0" text="First Name" />
+                                                <Line endX="-12.0" endY="31.0" layoutX="137.0" layoutY="77.0" startX="-12.0" startY="5.0" />
+                                                <Label layoutX="139.0" layoutY="85.0" text="LastName" />
+                                                <Line endX="-12.0" endY="31.0" layoutX="219.0" layoutY="77.0" startX="-12.0" startY="5.0" />
+                                                <Label layoutX="220.0" layoutY="85.0" text="Subject" />
+                                                <Line endX="-12.0" endY="31.0" layoutX="288.0" layoutY="77.0" startX="-12.0" startY="5.0" />
+                                                <Label layoutX="300.0" layoutY="85.0" text="Title" />
+                                                <Label layoutX="371.0" layoutY="85.0" text="Description Post" />
+                                                <Line endX="-12.0" endY="31.0" layoutX="361.0" layoutY="77.0" startX="-12.0" startY="5.0" />
+                                                <Line endX="-12.0" endY="31.0" layoutX="666.0" layoutY="77.0" startX="-12.0" startY="5.0" />
+                                                <Label layoutX="673.0" layoutY="87.0" text="Date " />
+                                                <Line endX="-12.0" endY="31.0" layoutX="851.0" layoutY="77.0" startX="-12.0" startY="5.0" />
+                                                <Line endX="-12.0" endY="31.0" layoutX="46.0" layoutY="77.0" startX="-12.0" startY="5.0" />
+                                                <Line endX="703.5" endY="-0.5" layoutX="135.0" layoutY="82.0" startX="-100.0" />
+                                                <Line endX="-12.0" endY="31.0" layoutX="583.0" layoutY="77.0" startX="-12.0" startY="5.0" />
+                                                <Label layoutX="598.0" layoutY="87.0" text="Image" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg2" />
+                                          <String fx:value="shadow2" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane id="AnchorPane" fx:id="eventamine" prefHeight="600.0" prefWidth="880.0">
+                                 <children>
+                                    <AnchorPane prefHeight="546.0" prefWidth="806.0" stylesheets="@../GUI_Events/ajout.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <TableView fx:id="admintab1" layoutX="13.0" layoutY="127.0" prefHeight="240.0" prefWidth="781.0">
+                                             <columns>
+                                                <TableColumn fx:id="nomev1" prefWidth="108.0" text="Event" />
+                                                <TableColumn fx:id="typeev1" prefWidth="114.0" text="Durée" />
+                                                <TableColumn fx:id="dureadm1" prefWidth="114.0" text="Prix" />
+                                                <TableColumn fx:id="Lieuadm1" prefWidth="114.0" text="Lieu" />
+                                                <TableColumn fx:id="Prixadm1" prefWidth="114.0" text="NbMax" />
+                                                <TableColumn fx:id="nbadm1" prefWidth="114.0" text="Type" />
+                                                <TableColumn fx:id="validadm1" prefWidth="114.0" text="Status" />
+                                             </columns>
+                                          </TableView>
+                                          <Button fx:id="banadm1" layoutX="360.0" layoutY="451.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="173.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="butto" stylesheets="@../GUI_Events/ajout.css" text="Ban" />
+                                          <Label layoutX="126.0" layoutY="39.0" text="Welcome Admin" textFill="#c95959">
+                                             <font>
+                                                <Font name="Arial Narrow Bold" size="38.0" />
+                                             </font>
+                                          </Label>
+                                          <FontAwesomeIcon fill="#ae4814" glyphName="USER" layoutX="47.0" layoutY="78.0" size="5em" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg2" />
+                                          <String fx:value="shadow2" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="userhaythem" layoutX="26.0" layoutY="45.0" prefHeight="620.8" prefWidth="884.8" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="BLOCK" layoutX="623.0" layoutY="512.0" mnemonicParsing="false" onAction="#blockUser" prefHeight="31.0" prefWidth="139.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="logout" stylesheets="@../STYLING/listeservice.css" text="block" />
+                                    <Label layoutX="385.0" layoutY="73.0" text="List users" textAlignment="CENTER" textFill="#df0a0a">
+                                       <font>
+                                          <Font size="28.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="117.0" layoutY="124.0" text="FIRST NAME" textFill="#ef0d0d">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="268.0" layoutY="124.0" text="LAST NAME" textFill="#df0808">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="421.0" layoutY="124.0" text="EMAIL" textFill="#e70c0c">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="550.0" layoutY="124.0" text="CLASS " textFill="#ef1010">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="675.0" layoutY="113.0" text="LOCTATION" textFill="#d70a0a">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ListView fx:id="listviewusers" layoutX="80.0" layoutY="146.0" prefHeight="346.0" prefWidth="752.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

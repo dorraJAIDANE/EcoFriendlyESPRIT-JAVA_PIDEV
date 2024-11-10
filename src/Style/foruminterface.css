@@ -1,0 +1,152 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+.button {
+    -fx-background-color: #e73d3d; /* red background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-cursor: hand; /* Hand cursor on hover */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #45a049; /* Darker green on hover */
+}
+
+/* Pressed effect for buttons */
+.button:pressed {
+    -fx-background-color: #367737; /* Even darker green when pressed */
+}
+
+.mainFxmlClass {
+.nav{
+    -fx-background-color: linear-gradient(to bottom right, #4694bb, #2a5178);
+}
+
+.nav-btn{
+    -fx-background-color: transparent;
+    -fx-border-color: #fff;
+    -fx-border-width: .7px;
+    -fx-border-radius: 4px;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+}
+.nav-btn:hover{
+    -fx-background-color: #fff;
+    -fx-text-fill: #2a5178;
+}
+
+.header{
+    -fx-background-color: whitesmoke;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: #fff;
+}
+
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
+
+.logout{
+    -fx-background-color: transparent;
+    -fx-background-radius: 50px;
+    -fx-border-color: #1cacee;
+    -fx-border-width: .7px;
+    -fx-border-radius: 50px;
+    -fx-padding: 5px;
+}
+.logout:hover{
+    -fx-background-color: #fff;
+    -fx-border-color: #fff;
+    -fx-background-radius: 50px;
+}
+
+.white-form{
+    -fx-background-color: #fff;
+}
+
+.radius{
+    -fx-background-radius: 8px;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #4694bb, #2a5178);
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+    -fx-padding: 0px;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right, #4694bb, #2a5178);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0 0;
+}
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill: #fff
+}
+
+.btn{
+    -fx-background-color: linear-gradient(to bottom right, rgba(55, 157, 204, 0), rgba(45, 107, 161, 0));;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+.btn:hover{
+    -fx-background-color: linear-gradient(to bottom right, rgba(55, 157, 204, 0), rgba(45, 107, 161, 0));;
+}
+
+.top-card{
+    -fx-background-color: linear-gradient(to bottom right, #4694bb, #2a5178);
+    -fx-background-radius: 8px 8px 0 0 ;
+}
+
+.scroll-pane{
+    -fx-background-color: transparent;
+}
+.button-add{
+    -fx-background-radius:70;
+}
+.shadow-img{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5), 6,0,0,0);
+}
+
+.white-bg{
+    -fx-background-color:#fff;
+    -fx-background-radius:8px;
+}
+.search{
+    -fx-background-color:transparent;
+    -fx-border-color:linear-gradient(to bottom right, #272b3f, #256b51);
+    -fx-border-radius:5px;
+    -fx-font-size:13px;
+    -fx-font-family:"Arial";
+    -fx-border-width:1px;
+    -fx-padding:0px 0px 0px 28px;
+}
+.search:focused{
+    -fx-border-width:2px;
+}
+.import-btn{
+    -fx-background-color:#ddd;
+    -fx-text-fill:red;
+    -fx-cursor:hand;
+}
+.label-info{
+    -fx-background-color:transparent;
+    -fx-border-color:linear-gradient(to bottom right, #272b3f, #256b51);
+    -fx-border-radius:4px;
+    -fx-padding:0px 0px 0px 8px;
+}
+.button-read{
+    -fx-text-fill: gray;
+    -fx-background-color:transparent;
+}
+
+}

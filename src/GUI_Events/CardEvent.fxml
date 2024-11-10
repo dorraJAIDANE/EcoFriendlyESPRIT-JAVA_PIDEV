@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="cardevent" prefHeight="300.0" prefWidth="384.0" styleClass="shadow" stylesheets="@ajout.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI_Events.CardEventController">
+   <children>
+      <VBox layoutX="85.0" layoutY="14.0" prefHeight="272.0" prefWidth="269.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="55.0" prefWidth="286.0">
+               <children>
+                  <Label fx:id="EventName" prefHeight="30.0" prefWidth="116.0" stylesheets="@ajout.css" text="Eventname" textFill="#ae2d3c">
+                     <HBox.margin>
+                        <Insets left="70.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Tahoma Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pricee" stylesheets="@ajout.css" text="Price:" textFill="#ae2d3c">
+                     <HBox.margin>
+                        <Insets left="90.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label stylesheets="@ajout.css" text="dt" textFill="#ae2d3c">
+                     <HBox.margin>
+                        <Insets left="2.0" top="16.5" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="206.0" prefWidth="414.0">
+               <children>
+                  <ImageView fx:id="imageevent" fitHeight="216.0" fitWidth="374.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <HBox prefHeight="46.0" prefWidth="286.0">
+               <children>
+                  <Button fx:id="details" mnemonicParsing="false" onAction="#showDetails" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="butto" text="Details">
+                     <HBox.margin>
+                        <Insets left="80.0" right="50.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="join" mnemonicParsing="false" onAction="#Join" prefHeight="40.0" prefWidth="88.0" style="-fx-background-color: linear-gradient(to top right, #1e242e, #FF0000);" styleClass="butto" text="Join">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin></Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
